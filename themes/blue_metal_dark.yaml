@@ -5,7 +5,7 @@
 blue_metal_dark:
 
   # Background image
-  lovelace-background: "center / cover no-repeat url('/local/images/backgrounds/blue-metal.jpg.jpg') fixed"
+  lovelace-background: "center / cover no-repeat url('/local/images/backgrounds/blue-metal-dark.jpg') fixed"
   accent-color: "hsl(var(--huesat) 30%)"
   base-hue: "220"
   base-sat: "5%"
