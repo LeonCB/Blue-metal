@@ -90,6 +90,10 @@ blue_metal_dark:
   table-row-background-color: "hsl(var(--huesat) 12%)"
   text-primary-color: "hsl(var(--huesat) 90%)"
 
+  # Google colors
+  google-red-500: "#db3236"
+  google-green-500: "#39E949"
+
   # mini-graph-card
   mcg-title-font-weight: "var(--paper-font-body1_-_font-weight)"
   mcg-title-letter-spacing: "var(--paper-font-headline_-_letter-spacing)"
@@ -101,10 +105,14 @@ blue_metal_dark:
   hacs-status-pending-restart: "#b92938"
   hacs-status-pending-update: "#b96229"
 
+  # href links in HACS
+  link-text-color: "var(--accent-color)"
+
   # ha-card
   ha-card-background: "rgba(10, 10, 10, 0.4)"
   ha-card-header-color: "hsl(var(--huesat) 90%)"
-
+  ha-card-border-radius: "0"
+  
   # bar-card
   bar-card-border-radius: "5px"
 
