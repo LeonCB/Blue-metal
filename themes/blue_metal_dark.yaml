@@ -6,6 +6,7 @@ blue_metal_dark:
 
   # Background image
   lovelace-background: "center / cover no-repeat url('/local/images/backgrounds/blue-metal-dark.jpg') fixed"
+  primary-text-color: "hsl(var(--huesat) 90%)"
   accent-color: "hsl(var(--huesat) 30%)"
   base-hue: "220"
   base-sat: "5%"
@@ -88,15 +89,21 @@ blue_metal_dark:
   sidebar-text_-_color: "hsl(var(--huesat) 90%)"
   table-row-alternative-background-color: "hsl(var(--huesat) 10%)"
   table-row-background-color: "hsl(var(--huesat) 12%)"
+  data-table-background-color: "hsl(var(--huesat) 12%)"
   text-primary-color: "hsl(var(--huesat) 90%)"
 
-  # Google colors
-  google-red-500: "#db3236"
-  google-green-500: "#39E949"
+  # Bar Card
+  custom-bar-card-color:  "var(--accent-color)"
 
   # mini-graph-card
   mcg-title-font-weight: "var(--paper-font-body1_-_font-weight)"
   mcg-title-letter-spacing: "var(--paper-font-headline_-_letter-spacing)"
+
+  # Mini Mediaplayer
+  mini-media-player-base-color: "var(--primary-text-color)"
+  mini-media-player-accent-color: "var(--accent-color)"
+  mini-media-player-icon-color: "var(--primary-text-color)"
+  mini-media-player-button-color: "var(--button-color)"
 
   # HACS
   hacs-badge-color: "var(--accent-color)"
