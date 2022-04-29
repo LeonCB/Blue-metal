@@ -14,6 +14,7 @@ blue_metal_dark:
   dark-divider-opacity: "0"
   dark-primary-color: "hsl(var(--huesat) 60%)"
   dark-secondary-opacity: "1"
+  data-table-background-color: "hsl(var(--huesat) 12%)"
   disabled-text-color: "hsl(var(--huesat) 70%)"
   divider-color: "hsla(0, 0%, 0%, 0)"
   huesat: "var(--base-hue), var(--base-sat),"
@@ -45,7 +46,11 @@ blue_metal_dark:
   lumo-tertiary-text-color: "var(--lumo-body-text-color)"
   lumo-tint-5pct: "var(--darker-grey-color)"
   mdc-button-background-color: "var(--primary-color)"
-  medium-grey-color: "rgb(45,45,45)"
+  mdc-text-field-fill-color: "var(--medium-grey-color)"
+  mdc-text-field-ink-color: "var(--primary-text-color)"
+  mdc-text-field-label-ink-color: "var(--primary-text-color)"
+  mdc-text-field__input: "var(--primary-text-color)"
+  medium-grey-color: "#333"
   paper-button-ink-color: "hsl(var(--huesat) 50%)"
   paper-card-background-color: "hsl(var(--huesat) 12%)"
   paper-card-header-color: "hsl(var(--huesat) 90%)"
@@ -89,11 +94,19 @@ blue_metal_dark:
   sidebar-text_-_color: "hsl(var(--huesat) 90%)"
   table-row-alternative-background-color: "hsl(var(--huesat) 10%)"
   table-row-background-color: "hsl(var(--huesat) 12%)"
-  data-table-background-color: "hsl(var(--huesat) 12%)"
   text-primary-color: "hsl(var(--huesat) 90%)"
 
   # Bar Card
+  bar-card-border-radius: "5px"
   custom-bar-card-color:  "var(--accent-color)"
+
+  # codemirror
+  codemirror-comment: "#868686"
+  codemirror-def: "#7070f9"
+  codemirror-number: "#ff822e"
+  codemirror-operator: "#ffd90e"
+  codemirror-property: "#f25eb8"
+  codemirror-string: "46c8ff"
 
   # mini-graph-card
   mcg-title-font-weight: "var(--paper-font-body1_-_font-weight)"
@@ -105,24 +118,19 @@ blue_metal_dark:
   mini-media-player-icon-color: "var(--primary-text-color)"
   mini-media-player-button-color: "var(--button-color)"
 
+  # ha-card
+  ha-card-background: "rgba(10, 10, 10, 0.4)"
+  ha-card-header-color: "hsl(var(--huesat) 90%)"
+  ha-card-border-radius: "0"
+  ha-card-font-weight: "normal"
+
   # HACS
   hacs-badge-color: "var(--accent-color)"
   hacs-badge-text-color: "white"
   hacs-status-installed: "#80b929"
   hacs-status-pending-restart: "#b92938"
   hacs-status-pending-update: "#b96229"
-
-  # href links in HACS
   link-text-color: "var(--accent-color)"
-
-  # ha-card
-  ha-card-background: "rgba(10, 10, 10, 0.4)"
-  ha-card-header-color: "hsl(var(--huesat) 90%)"
-  ha-card-border-radius: "0"
-  ha-card-font-weight: "normal"
-  
-  # bar-card
-  bar-card-border-radius: "5px"
 
   # markdown code
   markdown-code-background-color: "var(--primary-background-color)"
