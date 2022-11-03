@@ -122,6 +122,7 @@ blue_metal_dark:
   ha-card-header-color: "hsl(var(--huesat) 90%)"
   ha-card-border-radius: "0"
   ha-card-font-weight: "normal"
+  ha-card-border-width: "0"
 
   # HACS
   hacs-badge-color: "var(--accent-color)"
