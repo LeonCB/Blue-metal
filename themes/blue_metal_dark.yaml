@@ -64,7 +64,7 @@ blue_metal_dark:
   paper-input-container-color: "hsl(var(--huesat) 60%)"
   paper-item-icon-color: "hsl(var(--huesat) 45%)"
   paper-item-icon_-_color: "var(--paper-item-icon-color)"
-  paper-item-icon-active-color: "var(--primary-color)"
+  paper-item-icon-active-color: "rgb(var(--rgb-state-switch-color))"
   paper-item-selected_-_background-color: "hsla(0, 0%, 0%, 0.2)"
   paper-item-selected_-_color: "hsl(var(--huesat) 20%)"
   paper-listbox-background-color: "hsl(var(--huesat) 16%)"
