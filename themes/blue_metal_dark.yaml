@@ -5,16 +5,16 @@
 blue_metal_dark:
   # Background image
   lovelace-background: "center / cover no-repeat url('/local/images/backgrounds/blue-metal-dark.jpg') fixed"
-  
+
   # HA
   accent-color: "#494b50"
   card-background-color: "var(--paper-card-background-color)"
   dark-divider-opacity: "0"
   dark-primary-color: "#94979e"
   dark-secondary-opacity: "1"
-  data-table-background-color: "#1d1e20"
+  data-table-background-color: "var(--paper-card-background-color)"
   disabled-text-color: "#bcbec2"
-  divider-color: "#1d1e20"
+  divider-color: "var(--paper-card-background-color)"
   error-color: "#db4437"
   error-state-color: "var(--error-color)"
   label-badge-background-color: "var(--paper-card-background-color)"
@@ -22,7 +22,7 @@ blue_metal_dark:
   label-badge-red: "#603520"
   label-badge-text-color: "var(--primary-text-color)"
   light-divider-opacity: "0"
-  light-primary-color: "#494b50"
+  light-primary-color: "var(--accent-color)"
   lumo-base-color: "var(--medium-grey-color)"
   lumo-body-text-color: "var(--primary-text-color)"
   lumo-header-text-color: "var(--lumo-body-text-color)"
@@ -50,7 +50,7 @@ blue_metal_dark:
   mdc-text-field-label-ink-color: "var(--primary-text-color)"
   mdc-text-field__input: "var(--primary-text-color)"
   medium-grey-color: "#333"
-  paper-button-ink-color: "#797d86"
+  paper-button-ink-color: "var(--paper-grey-50)"
   paper-card-background-color: "#1d1e20"
   paper-card-header-color: "var(--primary-text-color)"
   paper-dialog-background-color: "var(--paper-card-background-color)"
@@ -60,14 +60,14 @@ blue_metal_dark:
   paper-font-headline_-_letter-spacing: "-0.012em"
   paper-grey-200: "#18191b"
   paper-grey-50: "#797d86"
-  paper-input-container-color: "#94979e"
+  paper-input-container-color: "var(--dark-primary)"
   paper-item-icon-active-color: "var(--primary-color)"
   paper-item-icon-color: "#6d7178"
   paper-item-icon_-_color: "var(--paper-item-icon-color)"
   paper-item-selected_-_background-color: "rgba(0, 0, 0, 0.2)"
   paper-item-selected_-_color: "#303236"
-  paper-listbox-background-color: "#27282b"
-  paper-listbox-color: "#797d86"
+  paper-listbox-background-color: "var(--primary-background-color)"
+  paper-listbox-color: "var(--paper-grey-50)"
   paper-slider-active-color: "var(--primary-color)"
   paper-slider-container-color: "#44464b"
   paper-slider-disabled-active-color: "#0d2f73"
@@ -85,15 +85,15 @@ blue_metal_dark:
   primary-background-color: "#27282b"
   primary-color: "#2581ab"
   primary-text-color: "#e4e5e7"
-  secondary-background-color: "#27282b"
+  secondary-background-color: "var(--primary-background-color)"
   secondary-text-color: "#c9cbcf"
   shadow-elevation-16dp_-_box-shadow: "0px 0px 0px 0px #3d3e43"
-  shadow-elevation-2dp_-_box-shadow: "0px 0px 0px 0px #18191b"
-  sidebar-icon-color: "#797d86"
+  shadow-elevation-2dp_-_box-shadow: "0px 0px 0px 0px var(--paper-grey-200)"
+  sidebar-icon-color: "var(--paper-grey-50)"
   sidebar-text-color: "var(--primary-text-color)"
   sidebar-text_-_color: "var(--primary-text-color)"
-  table-row-alternative-background-color: "#18191b"
-  table-row-background-color: "#1d1e20"
+  table-row-alternative-background-color: "var(--paper-grey-200)"
+  table-row-background-color: "var(--paper-card-background-color)"
   text-primary-color: "var(--primary-text-color)"
 
   # Bar Card
@@ -130,14 +130,14 @@ blue_metal_dark:
 
   # ha-card
   ha-card-background: "rgba(10, 10, 10, 0.4)"
-  ha-card-header-color: "#e4e5e7"
+  ha-card-header-color: "var(--primary-text-color)"
   ha-card-border-radius: "5px"
   ha-card-font-weight: "normal"
   ha-card-border-width: "0"
 
   # HACS
   hacs-badge-color: "var(--accent-color)"
-  hacs-badge-text-color: "white"
+  hacs-badge-text-color: "#fff"
   hacs-status-installed: "#80b929"
   hacs-status-pending-restart: "#b92938"
   hacs-status-pending-update: "#b96229"
@@ -146,12 +146,25 @@ blue_metal_dark:
   # markdown code
   markdown-code-background-color: "var(--primary-background-color)"
 
+  # mushroom
+  mush-chip-border-radius: "var(--ha-card-border-radius)"
+  mush-chip-padding: 0px
+  mush-chip-height: 42px
+  mush-chip-avatar-padding: 0.1em
+  mush-chip-avatar-border-radius: 50%
+
   # card mod theme
   card-mod-theme: blue_metal_dark # Add this line to apply the styling
-  card-mod-card: |
-    ha-card.type-custom-mushroom-fan-card,
+  card-mod-card: | #  ha-card.type-custom-mushroom-fan-card,
     ha-card.type-custom-weather-card,
-    ha-card.type-gauge
-    {
-      background: none;
+    ha-card.type-gauge {
+      background: none
+    }
+
+    mushroom-template-chip {
+      width: 100%; 
+    }
+
+    div.chip-container {
+      flex-wrap: nowrap
     }
