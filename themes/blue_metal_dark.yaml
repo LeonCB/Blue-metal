@@ -9,6 +9,7 @@ blue_metal_dark:
   # HA
   accent-color: "#494b50"
   card-background-color: "var(--paper-card-background-color)"
+  clear-background-color: "var(--paper-grey-50)"
   dark-divider-opacity: "0"
   dark-primary-color: "#94979e"
   dark-secondary-opacity: "1"
@@ -155,12 +156,7 @@ blue_metal_dark:
 
   # card mod theme
   card-mod-theme: blue_metal_dark # Add this line to apply the styling
-  card-mod-card: | #  ha-card.type-custom-mushroom-fan-card,
-    ha-card.type-custom-weather-card,
-    ha-card.type-gauge {
-      background: none
-    }
-
+  card-mod-card: |
     mushroom-template-chip {
       width: 100%; 
     }
